@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<policies>
+  <policy policyType="MQEndpoint" policyName="MQPolicyProject" policyTemplate="MQEndpoint">
+    <connection>CLIENT</connection>
+    <destinationQueueManagerName>DEMOQM</destinationQueueManagerName>
+    <queueManagerHostname>mq-demo-ibm-mq.lab-demo.svc.cluster.local</queueManagerHostname>
+    <listenerPortNumber>1414</listenerPortNumber>
+    <channelName>SYSTEM.DEF.SVRCONN</channelName>
+    <CCDTUrl></CCDTUrl>
+    <securityIdentity></securityIdentity>
+    <useSSL>false</useSSL>
+    <SSLPeerName></SSLPeerName>
+    <SSLCipherSpec></SSLCipherSpec>
+    <SSLCertificateLabel></SSLCertificateLabel>
+    <MQApplName></MQApplName>
+    <reconnectOption>default</reconnectOption>
+  </policy>
+</policies>

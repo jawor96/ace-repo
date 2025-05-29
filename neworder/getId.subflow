@@ -15,7 +15,7 @@
       <nodes xmi:type="ComIbmMSLMapping.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_1" location="219,238" mappingExpression="msl://{default}#getId_Mapping">
         <translation xmi:type="utility:ConstantString" string="Mapping"/>
       </nodes>
-      <nodes xmi:type="ComIbmMQOutput.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_2" location="321,91" queueName="&lt;Queue Name>" connection="CLIENT" destinationQueueManagerName="&lt;QUEUE MANAGER>" queueManagerHostname="&lt;MQ HOST ADDRESS>" listenerPortNumber="&lt;MQ PORT>" channelName="SYSTEM.DEF.SVRCONN">
+      <nodes xmi:type="ComIbmMQOutput.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_2" location="321,91" queueName="neworder" connection="CLIENT" destinationQueueManagerName="&lt;QUEUE MANAGER>" queueManagerHostname="&lt;MQ HOST ADDRESS>" listenerPortNumber="&lt;MQ PORT>" channelName="SYSTEM.DEF.SVRCONN" policyUrl="{MQPolicyProject}:MQPolicyProject">
         <translation xmi:type="utility:ConstantString" string="MQ Output"/>
       </nodes>
       <connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_1" targetNode="FCMComposite_1_1" sourceNode="InTerminal.Input_1" sourceTerminalName="OutTerminal.out" targetTerminalName="InTerminal.in"/>
