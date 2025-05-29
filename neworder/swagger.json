@@ -1,0 +1,54 @@
+{
+  "swagger" : "2.0",
+  "info" : {
+    "title" : "neworder",
+    "version" : "1.0.0",
+    "description" : "neworder"
+  },
+  "paths" : {
+    "/{id}" : {
+      "get" : {
+        "operationId" : "getId",
+        "responses" : {
+          "200" : {
+            "description" : "The operation was successful.",
+            "schema" : {
+              "type" : "string"
+            }
+          }
+        },
+        "produces" : [ "application/json" ],
+        "description" : "Retrieve id",
+        "parameters" : [ {
+          "required" : true,
+          "name" : "id",
+          "in" : "path",
+          "type" : "string"
+        } ]
+      }
+    }
+  },
+  "basePath" : "/neworder/v1",
+  "definitions" : {
+    "order" : {
+      "type" : "object",
+      "properties" : {
+        "orderid" : {
+          "type" : "string"
+        },
+        "Customerfirstname" : {
+          "type" : "string"
+        },
+        "Customerlastname" : {
+          "type" : "string"
+        },
+        "CustomerAddress" : {
+          "type" : "string"
+        },
+        "OrderStatus" : {
+          "type" : "string"
+        }
+      }
+    }
+  }
+}
